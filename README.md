@@ -14,7 +14,7 @@ Sine most of my works are on sentiment analysis, I will share more detail on how
 ### Data Processing
 To start with, we changed the emojies people left in their comments into English words. For example: 😀 was changed into "smile face". Which makes processing data easier and allowes VADER to capture the sentiments in these emojies.
 
-![emojies](https://user-images.githubusercontent.com/31845611/47969997-243ad200-e045-11e8-9e63-c8750bdb63eb.png)
+![emojies](https://user-images.githubusercontent.com/31845611/47970012-66fcaa00-e045-11e8-9728-bcb241c3b8aa.png)
 
 
 ### Sentiment Computation: Team Level
