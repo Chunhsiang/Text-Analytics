@@ -1,4 +1,4 @@
-### The Voice YouTube Comment Analysis
+# The Voice YouTube Comment Analysis
 
 ## Introduction
 Is there anything more frustrating than watching your favotrite singer got eliminated in TV shows like The Voice? Looking at our super star leaving the stage, we can help but feel he or she doesn't deserve this and wonder whether the judges or the mentors are making the right decisions? Are the judges choosing the less popular singers instead of the great singers that are more popular? If so, how do we identify those who are more popular online and have a greater potential to sucess in their career?
@@ -11,13 +11,13 @@ Sine most of my works are on sentiment analysis, I will share more detail on how
 
 ## Sentiment Analysis
 
-# Data Processing
+### Data Processing
 To start with, we changed the emojies people left in their comments into English words. For example: 😀 was changed into "smile face". Which makes processing data easier and allowes VADER to capture the sentiments in these emojies.
 
 ![emojies](https://user-images.githubusercontent.com/31845611/47969997-243ad200-e045-11e8-9e63-c8750bdb63eb.png)
 
 
-# Sentiment Computation: Team Level
+### Sentiment Computation: Team Level
 Next, we worked on extracting the sentiment of each comment using VADER in Python's nltk module. We aggregated sentiment of each mentor's team and visualized the sentiment distribution of each team by boxplot. 
 
 ![boxplot](https://user-images.githubusercontent.com/31845611/47969989-14bb8900-e045-11e8-907e-ca6e42a13561.png)
