@@ -25,3 +25,18 @@ Next, we worked on extracting the sentiment of each comment using VADER in Pytho
 We found that, sentiment distribution in Alicia's team is different from other teams. To understand what happened we looked into the YouTube comments of singers in her team. And discovered the key to polish the performance of sentiment analysis specified for The Voice singing contest.
 
 
+### Understanding context and improved sentiment dictionary
+
+![screen shot 2018-11-05 at 10 56 47 am 2](https://user-images.githubusercontent.com/31845611/48013720-8bf72880-e0ea-11e8-898d-2bf4c174a9d1.png)
+
+Among the four competitors in this round of Alicia's team, Christiana was chosen by Alicia to proceed to the next round. However, Kelsea has also put up a great performace and have more strong supporters on YouTube. When Kelsea's supporters comment on YouTube, many of them say things like: feeling bad for Kelsea, angry at the mentor's choice, upset about the results, etc. In other words, these negative words in the comment are pointing at the competition instead of of Kelsea and her singing performance. If we look at the sentiment at a team level, people are feeling bad to what has happened in Alicia's team. Nevertheless, when looking at an individual's singing contest vedio, these negative comment words left under the vedio actualy conveys a positive sentiment to the individual singer.
+
+![sentiment_dict](https://user-images.githubusercontent.com/31845611/48015352-94516280-e0ee-11e8-9804-e000a8bba74f.png)
+
+To improve our sentiment analysis, we adjust the sentiment dictionary based on our finding. Which gave us surprising results that we consider closer to the reality. In the plots below, the orange bars are the average sentiment scores of the singers chose by mentors, and the blue bars show those who are eliminated. We can see that in three out of four teams, there are discrepencies between the mentor's choice and the singer's popularity on YouTube. Such result correspond to the like - dislike ratio on each singer's competition YouTube vedio, and our understanding of how people feels after looking at the comments manually.
+
+![sentiment_after](https://user-images.githubusercontent.com/31845611/48015965-f6f72e00-e0ef-11e8-887b-3ec10544bca6.png)
+
+
+
+
