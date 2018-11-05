@@ -1,18 +1,18 @@
 # The Voice YouTube Comment Analysis
 
 ## Introduction
-Is there anything more frustrating than watching your favotrite singer got eliminated in TV shows like The Voice? Looking at our super star leaving the stage, we can help but feel he or she doesn't deserve this and wonder whether the judges or the mentors are making the right decisions? Are the judges choosing the less popular singers instead of the great singers that are more popular? If so, how do we identify those who are more popular online and have a greater potential to sucess in their career?
+Is there anything more frustrating than watching your favorite singer got eliminated in TV shows like The Voice? Looking at our super star leaving the stage, we can help but feel he or she doesn't deserve this and wonder whether the judges or the mentors are making the right decisions? Are the judges choosing the less popular singers instead of the great singers that are more popular? If so, how do we identify those who are more popular online and have a greater potential to success in their career?
 
-In order to answer these questions, we scrapped the youtube comments for Round2 singing videos in The Voice season 14 as our reseach data. In this round of the competition, each mentor can choosed to save one among four singers who are about to be eliminated from the game. We started with topic modeling to understand what people talk about when commenting on The Voice singing competitions, then applied sentiment analysis to extract popularity in YouTube comments, and used cosine similarity to find season 14 singers that got similar comments with successful singers who got eliminated in previous seasons in The Voice.
+In order to answer these questions, we scrapped the youtube comments for Round2 singing videos in The Voice season 14 as our research data. In this round of the competition, each mentor can chose to save one among four singers who are about to be eliminated from the game. We started with topic modeling to understand what people talk about when commenting on The Voice singing competitions, then applied sentiment analysis to extract popularity in YouTube comments, and used cosine similarity to find season 14 singers that got similar comments with successful singers who got eliminated in previous seasons in The Voice.
 
-Sine most of my works are on sentiment analysis, I will share more detail on how we applied and improved sentiment analyis by VADER in this README.
+Sine most of my works are on sentiment analysis, I will share more detail on how we applied and improved sentiment analysis by VADER in this README. Jupyter notebook for the code: https://github.com/Chunhsiang/UT_The-Voice-Competition-on-Youtube-Comment/blob/master/Sentiment_analysis.ipynb
 
 
 
 ## Sentiment Analysis
 
 ### Data Processing
-To start with, we changed the emojies people left in their comments into English words. For example: 😀 was changed into "smile face". Which makes processing data easier and allowes VADER to capture the sentiments in these emojies.
+To start with, we changed the emojies people left in their comments into English words. For example: 😀 was changed into "smile face". Which makes processing data easier and allows VADER to capture the sentiments in these emojies.
 
 ![emojies](https://user-images.githubusercontent.com/31845611/47970012-66fcaa00-e045-11e8-9728-bcb241c3b8aa.png)
 
@@ -33,10 +33,15 @@ Among the four competitors in this round of Alicia's team, Christiana was chosen
 
 ![sentiment_dict](https://user-images.githubusercontent.com/31845611/48015352-94516280-e0ee-11e8-9804-e000a8bba74f.png)
 
-To improve our sentiment analysis, we adjust the sentiment dictionary based on our finding. Which gave us surprising results that we consider closer to the reality. In the plots below, the orange bars are the average sentiment scores of the singers chose by mentors, and the blue bars show those who are eliminated. We can see that in three out of four teams, there are discrepencies between the mentor's choice and the singer's popularity on YouTube. Such result correspond to the like - dislike ratio on each singer's competition YouTube vedio, and our understanding of how people feels after looking at the comments manually.
+To improve our sentiment analysis, we adjust the sentiment dictionary based on our finding. Which gave us surprising results that we consider closer to the reality. In the plots below, the orange bars are the average sentiment scores of the singers chose by mentors, and the blue bars show those who are eliminated. We can see that in three out of four teams, there are discrepancies between the mentor's choice and the singer's popularity on YouTube. Such results correspond to the like - dislike ratio on each singer's competition YouTube video, and our understanding of how people feels after looking at the comments manually.
 
 ![sentiment_after](https://user-images.githubusercontent.com/31845611/48015965-f6f72e00-e0ef-11e8-887b-3ec10544bca6.png)
 
+
+
+## Conclusion and Final remarks
+
+In unsupervised methods like sentiment analysis, we can hardly good metric to help us understand whether our model is doing well or not. As analyst, we should not only learn about the unsupervised methods but also learn about our data. In our analysis, we read the YouTube comments so that we know whether the results are making sense. Combining our knowledge both on the data and on sentiment analysis, we built the interesting an insightful analysis that is tailored for The Voice singing contest.
 
 
 
